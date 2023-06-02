@@ -1,0 +1,515 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset css */
+
+
+
+/* header */
+
+
+header {
+    padding: 42px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .header-left {
+    display: flex;
+    align-items: center;
+    gap: 137px;
+    
+}
+
+header .header-left img {
+    height: 33px;
+}
+
+header .header-left .nav-links{
+    display: flex;
+    gap: 42px;
+
+}
+
+
+header .header-left .nav-links a{
+    text-decoration: none;
+    font-family:  'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: black;
+
+}
+
+header .header-left .nav-links a.active {
+
+    color:  #009591;
+}
+
+
+header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+header .header-right button {
+width: 96px;
+height: 42px;
+background-color: #009591;
+border-radius: 100px;
+border: none;
+
+font-family: 'Poppins'sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+}
+ /* media quries */
+
+
+ @media(max-width:1041px) {
+    header .container .header-left {
+        display: block;
+
+        
+    }
+ }
+
+ @media(max-width: 781px) {
+    header .container {
+        display: block;
+        text-align: center;
+
+    }
+    header .header-left .nav-links, 
+    header .header-right {
+        justify-content: center;
+
+    }
+    header .header-left .nav-links {
+        margin: 10px 0px 10px 0px ;
+    }
+ }
+
+ @media(max-width:433px) {
+    header .header-left .nav-links{
+        gap: 21px;
+    
+    }
+    header .header-right {
+       gap: 22px;
+    }
+
+ }
+ /* * heaedr css */
+
+ /*  * menu css */
+  
+nav {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    
+}
+
+nav .menu-links {
+    display: flex;
+    gap: 44px;
+    white-space: nowrap;
+    
+}
+
+nav .menu-links a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    border-bottom: 2px solid #ececec;
+    padding: 0px 16px 16px 16px;
+} 
+
+nav .menu-links a.active {
+    border-color: #009591;
+    color: #009591;
+}
+
+nav .menu-links a:hover {
+    border-color: #009591;
+    color: #009591;
+}
+
+@media(max-width:640px) {
+    nav {
+        margin-top: 25px;
+        
+    }
+    
+
+}
+
+ /*  * menu css */
+
+ /*  * banner css  */
+  
+
+
+.banner .circle {
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-color: #009591;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .circle .inner-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #00CCC7;
+}
+
+
+.banner .banner-image img {
+    height: 484px;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    
+   
+}
+
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    margin: 156px 25px 25px 25px ;
+}
+
+
+.banner .banner-image {
+    position: relative;
+}
+
+.banner .banner-left h5 {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 8px;
+
+}
+
+.banner .banner-left h1 {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.0154px;
+    line-height: 66px;
+    color: #009591;
+    max-width: 706px;
+    margin-bottom: 25px;
+
+}
+
+.banner .banner-left h1 span {
+   color: #00CCC7;
+}
+
+.banner .banner-left p {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    max-width: 500px;
+ }
+
+ .banner .banner-left button {
+    height: 50px;
+    border: none;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    padding: 11px 40px;
+    margin-top: 10px;
+
+}
+
+.banner .banner-left button.primary {
+    background-color:#00CCC7;
+}
+
+.banner .banner-left button.secondary {
+    background-color:#009591;
+    color: #ececec;
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+}
+
+@media(max-width:1146px) {
+    .banner {
+        margin: 40px;
+    }
+    .banner .container {
+       flex-direction: column-reverse;
+    }
+
+    .banner .banner-left {
+        margin: 50px;
+        text-align: center;
+    }
+    .banner .banner-left p {
+        margin: 0 auto 34px auto;
+     }
+}
+
+@media(max-width:500px) {
+    .banner .banner-left h1 {
+        font-size: 30px;
+        line-height: 40px;
+    
+    }
+
+    .banner .banner-left button.primary {
+        margin-bottom: 10px;
+    } 
+    .banner .circle {
+        width: 300px;
+        height: 300px;
+        
+    }
+    
+    .banner .circle .inner-circle {
+        width: 150px;
+        height: 150px;
+        
+    }
+
+/* * media queries of banner iamge */
+
+    .banner .circle {
+        width: 280px;
+        height: 280px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .circle .inner-circle {
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 60px;
+        
+    }
+
+    .banner .banner-image img {
+        height: 300px;
+        position: absolute;
+        top: 10;
+        left: -60px;
+       
+    }
+
+}
+
+  /*  * banner css  */
+
+  /*  * cards css */
+
+.box {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.box {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.box-1 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 16px;
+
+}
+
+.box-1 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+.alpha {
+    max-width: 80px;
+    margin: 0 auto;
+    
+}
+
+.bita {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.gema {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.box-2 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.box-2 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+.box-3 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.box-3 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+.box-4 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.box-4 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+
+.box-5 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.box-5 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+
+.box-6 {
+    border: 2px solid black;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.box-6 {
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    padding: 49px 0;
+    text-align: center;
+}
+
+
+
